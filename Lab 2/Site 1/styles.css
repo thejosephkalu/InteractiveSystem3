@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+
+    background-image: url(Assets/bg_image.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.countDownContainer{
+    display: flex;
+}
+.countElement{
+    text-align: center;
+}
+.bigText{
+    margin: 0 50px;
+}
