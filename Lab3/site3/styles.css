@@ -1,0 +1,33 @@
+.main-container{
+    text-align: center;
+    background-color: #facf5a;
+    margin-right: 30%;
+    margin-left: 30%;
+    box-shadow: #facf5a 0px 5px 15px;
+    border-radius: 50px;
+}
+.main-body{
+    background-image: url('https://wallpapercave.com/wp/wp7837599.png');
+    background-repeat: round;
+    background-blend-mode: darken;
+}
+.heading{
+    padding-top: 1px;
+}
+.row-elements{
+    display: flex;
+    margin: 27px;
+}
+.image-circle{
+    height: 50px;
+    width: 50px;
+}
+.col-name{
+    margin-top: 5px;
+}
+.col-activity{
+    margin-left: 20px;
+}
+.sub-container{
+    display: inline-block;
+}
