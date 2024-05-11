@@ -17,6 +17,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.9);
+  width: 800px;
+  height: 300px;
 }
 
 .quote {
@@ -32,7 +34,7 @@ body {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #008000;
   color: white;
   border: none;
   border-radius: 5px;
@@ -41,5 +43,5 @@ body {
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #00ff00;
 }
