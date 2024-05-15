@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: montserrat;
   background: url("background-image.jpg");
   background-size: cover;
   background-position: center;
@@ -12,22 +12,27 @@ body {
 }
 
 .quote-box {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 800px;
-  height: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  width: 500px;
+  height: 250px;
+  text-align: center;
 }
 
 .quote {
   font-size: 24px;
   font-style: italic;
+  font-weight: semi bold;
 }
 
 .author {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .button {
@@ -43,5 +48,5 @@ body {
 }
 
 .button:hover {
-  background-color: #00ff00;
+  background-color: #00cc00;
 }
