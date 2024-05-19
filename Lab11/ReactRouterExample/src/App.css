@@ -35,6 +35,8 @@ header {
   border-radius: 5px;
 }
 
+
+
 @media screen and (max-width: 680px) {
   .navigation{
       display: none;
