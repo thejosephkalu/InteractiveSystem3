@@ -1,37 +1,34 @@
 import React from "react";
-import "./Movie.css";
+import "./Movie.css"
 
 const ImageURL = 'https://image.tmdb.org/t/p/w500/';
-const placeholderImage = 'https://raw.githubusercontent.com/mehmoodhamza819/Interactive-Design-System/main/Lab7/app1/public/images/poster.png';
+const NoImage = 'https://screench.com/upload/no-poster.jpeg';
 
-function Movie({poster_path,title,overview,vote_average})
+function Movie({poster_path,title, overview, vote_average})
 {
-    const ImageURLFinal=ImageURL+poster_path;
-    const imageURLFinal = poster_path ? ImageURL + poster_path : placeholderImage;
-    let scoreColorClass = '';
-    if (vote_average > 7) {
-        scoreColorClass = 'green';
-    } else if (vote_average <= 7 && vote_average >= 5) {
-        scoreColorClass = 'yellow';
-    } else {
-        scoreColorClass = 'red';
+    const getVoteColor = (vote) => {
+        if (vote > 7) {
+            return 'green';
+        } else if (vote >= 5) {
+            return 'yellow';
+        } else {
+            return 'red';
+        }
     }
-    return(
-<div className="movie">
-    <img src={imageURLFinal}alt={title}></img>
-    <div className="movie-info">
-        <h3>{title}</h3>
-        <span className={`vote-average ${scoreColorClass}`}>{vote_average}</span>
-    </div>
-    <div className="movie-overview">
-        <h2>Overview:</h2>
-        <p>{overview}</p>
-    </div>
-</div>
 
+    return (
+        <div className="movie">
+            <img src={poster_path ? ImageURL + poster_path : NoImage} alt={title}></img>
+            <div className="movie-info">
+                <h3>{title}</h3>
+                <span style={{color: getVoteColor(vote_average)}}>{vote_average}</span>
+            </div>
+            <div className="movie-overview">
+                <h2>Overview</h2>
+                <p>{overview}</p>
+            </div>
+        </div>
     );
 }
-
-
 
 export default Movie;
