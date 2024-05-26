@@ -9,6 +9,7 @@ void setup()
 {
 pinMode(ledPin, OUTPUT); // Sets the LED pin as an output
 pinMode(inputPin, INPUT); // Sets the PIR sensor pin as input
+pinMode(pinSpeaker, OUTPUT); // Sets the speaker pin as an output
 Serial.begin(9600);
 }
 
